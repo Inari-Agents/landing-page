@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title">
+  <title id="title">Logo horizontal de Inari sobre fondo crema</title>
+  <style>@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&amp;display=swap");.wordmark{font-family:"Manrope",Arial,sans-serif;font-size:190px;font-weight:800;letter-spacing:-11px}</style>
+  <rect width="1200" height="420" rx="28" fill="#f6f1ea"/>
+  <g fill="#b63d32" transform="translate(45 72) scale(.39)">
+    <path d="M15 289c55 43 111 67 176 68 67 1 126-24 190-41 87-24 166 2 221 55-68 10-124 38-184 73-61 36-116 70-183 70-106 0-190-88-220-225Z"/>
+    <path fill-rule="evenodd" d="M385 682c39-48 77-103 103-158 28-60 48-111 105-146 54-34 111-38 169-31 55 7 98-7 130-43l28-37-33-24 58-60c8-59 20-112 48-153 18 51 48 88 99 111 36 17 51 42 64 69 14 20 35 31 66 40l-22 25c-38-13-72-21-111-18-55 4-92 32-111 77-15 34-18 83-40 142l185 206h-45L801 522c-43-22-84-28-119-17-30 9-48 33-69 57-41 48-83 91-138 120Zm681-473c22-12 47-10 64 20-23-10-42-13-64-20Z"/>
+    <path d="m687 537 68 1-68 73 29 46 45 25h-52l-89-72Z"/>
+  </g>
+  <g transform="translate(45 72) scale(.39)" fill="none" stroke="#b63d32" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1170 290c-40-5-76 1-104 20-35 24-54 62-59 108-3 29-8 49-23 67"/>
+  </g>
+  <text class="wordmark" x="590" y="280" fill="#241b1b">inari<tspan fill="#b63d32">.</tspan></text>
+</svg>

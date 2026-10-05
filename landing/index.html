@@ -14,10 +14,7 @@
     <div class="site-shell">
       <header class="topbar">
         <a class="brand" href="#inicio" aria-label="Inari, inicio">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 48 48" role="img"><path d="M12 8 14 27l-4 6 10 7c3 2 4 5 4 5s1-3 4-5l10-7-4-6 2-19-10 8H22Z"/><path d="M17 35c-8 3-7 10 1 10 9 0 15-5 21-11-8-3-14-1-21 4"/></svg>
-          </span>
-          <span>inari<span class="brand-dot">.</span></span>
+          <img class="brand-logo" src="branding/inari-logo-horizontal.svg" alt="" />
         </a>
         <nav class="nav-links" aria-label="Navegación principal">
           <a href="#solucion">La solución</a>
@@ -40,27 +37,100 @@
             </div>
             <div class="hero-proof"><span class="proof-dot"></span><span>De documento disperso a expediente listo</span></div>
           </div>
-          <div class="hero-art reveal reveal-delay" aria-label="Ilustración abstracta de un zorro y flujo documental">
+          <div class="hero-art reveal reveal-delay" aria-label="Visualización de un grafo de dependencias documentales en proceso">
             <div class="art-orbit orbit-one"></div>
             <div class="art-orbit orbit-two"></div>
-            <div class="document-card card-back"><span>VALIDACIÓN</span><strong>✓</strong><small>Conforme</small></div>
-            <div class="document-card card-front"><span>EXPEDIENTE 04—18</span><strong>92<span>%</span></strong><small>de avance automático</small><div class="progress"><i></i></div></div>
-            <div class="fox-figure">
-              <svg viewBox="0 0 300 320" role="img" aria-label="Zorro geométrico y amigable de Inari">
-                <path class="fox-tail" d="M113 216c-52-1-78 28-69 61 12 42 71 53 123 31 37-16 62-42 85-70-39-17-78-8-113 15-18 12-32 23-48 31-24-20-17-48 22-68Z" />
-                <path class="fox-body" d="M105 211c12-28 36-44 63-43 30 1 52 22 55 60l-10 61H88l-7-40c-3-17 5-29 24-38Z" />
-                <path class="fox-head" d="m104 163-9-108 52 35c11-4 22-4 33 0l50-35-10 108-24 25-34 22-35-22Z" />
-                <path class="fox-ear-inner" d="m105 74 4 63 28-38Z" /><path class="fox-ear-inner" d="m195 74-4 63-27-38Z" />
-                <path class="fox-muzzle" d="m126 145 24 10 25-10 9 24-34 25-34-25Z" />
-                <path class="fox-eye" d="M120 127c8-8 17-9 27-3-9 6-18 7-27 3Z" />
-                <path class="fox-eye" d="M153 124c10-6 19-5 27 3-9 4-18 3-27-3Z" />
-                <path class="fox-nose" d="m147 157 7-4 7 4-7 7Z" />
+            <div class="workflow-figure">
+              <svg viewBox="0 0 440 360" role="img" aria-label="Grafo de dependencias entre documentos, formularios y validaciones">
+                <defs>
+                  <marker id="graph-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 6 3 0 6Z" /></marker>
+                </defs>
+
+                <g class="graph-links">
+                  <path class="graph-edge" d="M132 80C146 80 149 122 164 137" />
+                  <path class="graph-edge" d="M126 280C150 278 148 239 166 224" />
+                  <path class="graph-edge" d="M294 133C315 119 319 99 336 98" />
+                  <path class="graph-edge" d="M294 221C316 231 318 270 337 278" />
+                  <path class="graph-edge graph-edge-secondary" d="M383 150V242" />
+                </g>
+
+                <g class="graph-node graph-file" transform="translate(18 39)">
+                  <rect class="graph-node-bg" width="116" height="82" rx="7" />
+                  <path class="graph-file-icon" d="M14 15h19l9 9v24H14Zm19 0v10h9" />
+                  <text class="graph-kicker" x="52" y="23">FUENTE</text>
+                  <text class="graph-title" x="52" y="39">Contrato.pdf</text>
+                  <text class="graph-meta" x="52" y="55">12 páginas</text>
+                  <circle class="graph-status-dot" cx="17" cy="67" r="3" />
+                  <text class="graph-status" x="25" y="70">LEÍDO</text>
+                </g>
+
+                <g class="graph-node graph-form" transform="translate(9 236)">
+                  <rect class="graph-node-bg" width="119" height="90" rx="7" />
+                  <text class="graph-kicker" x="13" y="20">FORMULARIO 04</text>
+                  <rect class="graph-field" x="13" y="30" width="93" height="11" rx="2" />
+                  <rect class="graph-field" x="13" y="48" width="66" height="11" rx="2" />
+                  <rect class="graph-checkbox" x="13" y="68" width="8" height="8" rx="1" />
+                  <path class="graph-check" d="m15 72 2 2 4-5" />
+                  <text class="graph-status" x="28" y="76">AUTOCOMPLETADO</text>
+                </g>
+
+                <g class="graph-node graph-main" transform="translate(163 85)">
+                  <rect class="graph-node-bg" width="132" height="190" rx="9" />
+                  <rect class="graph-main-head" width="132" height="39" rx="9" />
+                  <path class="graph-main-head-fix" d="M0 30h132v10H0z" />
+                  <text class="graph-main-kicker" x="14" y="17">EXPEDIENTE</text>
+                  <text class="graph-main-title" x="14" y="31">04—18</text>
+                  <text class="graph-kicker" x="14" y="60">DEPENDENCIAS</text>
+                  <g class="graph-task">
+                    <circle cx="19" cy="78" r="5" /><path d="m16.5 78 2 2 4-5" />
+                    <text x="31" y="81">Identidad</text>
+                  </g>
+                  <g class="graph-task">
+                    <circle cx="19" cy="101" r="5" /><path d="m16.5 101 2 2 4-5" />
+                    <text x="31" y="104">Contrato</text>
+                  </g>
+                  <g class="graph-task graph-task-active">
+                    <circle cx="19" cy="124" r="5" />
+                    <text x="31" y="127">Formulario</text>
+                  </g>
+                  <g class="graph-task graph-task-pending">
+                    <circle cx="19" cy="147" r="5" />
+                    <text x="31" y="150">Validación</text>
+                  </g>
+                  <rect class="graph-progress-track" x="14" y="166" width="104" height="5" rx="2.5" />
+                  <rect class="graph-progress-value" x="14" y="166" width="76" height="5" rx="2.5" />
+                  <text class="graph-progress-label" x="14" y="182">72% PROCESADO</text>
+                </g>
+
+                <g class="graph-node graph-data" transform="translate(334 45)">
+                  <rect class="graph-node-bg" width="96" height="106" rx="7" />
+                  <text class="graph-kicker" x="12" y="20">DATOS</text>
+                  <text class="graph-data-label" x="12" y="40">NIF</text><text class="graph-data-value" x="84" y="40" text-anchor="end">•••82A</text>
+                  <text class="graph-data-label" x="12" y="58">FECHA</text><text class="graph-data-value" x="84" y="58" text-anchor="end">18/04</text>
+                  <text class="graph-data-label" x="12" y="76">IMPORTE</text><text class="graph-data-value" x="84" y="76" text-anchor="end">12.840</text>
+                  <rect class="graph-chip" x="12" y="87" width="72" height="11" rx="5.5" />
+                  <text class="graph-chip-text" x="48" y="95" text-anchor="middle">CONTRASTADO</text>
+                </g>
+
+                <g class="graph-node graph-result" transform="translate(336 244)">
+                  <rect class="graph-node-bg" width="94" height="76" rx="7" />
+                  <circle class="graph-result-ring" cx="20" cy="23" r="10" />
+                  <path class="graph-result-check" d="m15 23 4 4 7-9" />
+                  <text class="graph-kicker" x="38" y="20">SALIDA</text>
+                  <text class="graph-title" x="38" y="36">Listo</text>
+                  <text class="graph-meta" x="12" y="58">BORRADOR GENERADO</text>
+                </g>
+
+                <g class="graph-working" transform="translate(278 202)">
+                  <rect width="86" height="22" rx="11" />
+                  <circle cx="13" cy="11" r="3" />
+                  <text x="22" y="14">TRABAJANDO</text>
+                </g>
+                <path class="graph-cursor" d="m313 225 4 22 5-7 7 8 4-4-7-8 8-4Z" />
               </svg>
             </div>
-            <div class="floating-label label-top">01 <span>leer</span></div>
-            <div class="floating-label label-bottom">02 <span>resolver</span></div>
+
           </div>
-          <div class="scroll-cue"><span>01</span><i></i><span>explorar</span></div>
         </section>
 
         <section class="problem section-band" id="problema">
@@ -94,7 +164,7 @@
         </section>
 
         <section class="about" id="nosotros">
-          <div class="about-mark reveal"><span>INARI</span><div class="mini-fox">⌁</div><small>LA LLAVE DEL FLUJO</small></div>
+          <div class="about-mark reveal"><img src="branding/inari-logo-stacked.svg" alt="Inari" /><small>LA LLAVE DEL FLUJO</small></div>
           <div class="about-copy reveal reveal-delay"><p class="eyebrow">About us</p><h2>Construimos la capa de criterio que faltaba entre los documentos y las <em>decisiones.</em></h2><p>Inari nace de una convicción: la tecnología debe asumir la complejidad para que los equipos puedan dedicarse a lo que requiere de verdad su experiencia.</p><a class="text-link" href="#contacto">Conoce nuestra visión <span aria-hidden="true">↗</span></a></div>
         </section>
 
@@ -110,7 +180,7 @@
         </section>
       </main>
 
-      <footer class="footer"><a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M9 38 13 10l10 8 11-7 5 27H9Z"/><path d="m13 10 10 8-1 8M34 11l-11 7 12 5M17 33h18"/></svg></span><span>inari<span class="brand-dot">.</span></span></a><span>Inteligencia para que el negocio fluya.</span><span>© 2026 Inari</span></footer>
+      <footer class="footer"><a class="brand" href="#inicio" aria-label="Inari, inicio"><img class="brand-logo" src="branding/inari-logo-horizontal.svg" alt="" /></a><span>Inteligencia para que el negocio fluya.</span><span>© 2026 Inari</span></footer>
     </div>
     <script src="script.js"></script>
   </body>
