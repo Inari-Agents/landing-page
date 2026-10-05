@@ -130,12 +130,3 @@ h1 em,h2 em { color:var(--red); font-style:normal; }
 @media (max-width:470px) { .workflow-figure { bottom:34px; right:-1%; width:340px; } }
 @media (prefers-reduced-motion:reduce) { .graph-edge,.graph-task-active circle,.graph-progress-value,.graph-working circle,.graph-cursor { animation:none; } }
 
-
-/* Desktop 150% density */
-@media (min-width:1201px) {
-  html { zoom:1.5; }
-  .hero { min-height:calc(66.6667vh - 88px); }
-  h1 { font-size:clamp(48px,3.6667vw,76px); }
-  .section-intro h2,.solution-head h2,.section-heading h2,.about h2,.contact h2 { font-size:clamp(34px,2.6667vw,54px); }
-  .problem,.use-cases,.contact { padding-left:max(48px,calc((66.6667vw - 1184px)/2)); padding-right:max(48px,calc((66.6667vw - 1184px)/2)); }
-}
