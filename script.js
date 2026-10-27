@@ -29,9 +29,5 @@ const revealObserver = new IntersectionObserver(
 
 document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
 
-contactForm?.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const status = contactForm.querySelector(".form-status");
-  status.textContent = "Gracias. Hemos recibido tu mensaje y te escribiremos pronto.";
-  contactForm.reset();
-});
+// Sin backend todavía: el formulario no envía nada.
+contactForm?.addEventListener("submit", (event) => event.preventDefault());

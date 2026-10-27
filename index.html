@@ -3,23 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Inari transforma la burocracia documental en decisiones claras y accionables." />
-    <title>Inari | La inteligencia detrás de cada expediente</title>
+    <meta name="description" content="Inari analiza, extrae y cumplimenta tus documentos. Burocracia cero, gestión documental autónoma." />
+    <title>Inari | Burocracia cero, gestión documental autónoma</title>
+    <link rel="icon" href="assets/inari-fox.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="site-shell">
       <header class="topbar">
         <a class="brand" href="#inicio" aria-label="Inari, inicio">
-          <img class="brand-logo" src="branding/inari-logo-horizontal.svg" alt="" />
+          <span class="fox-mark" aria-hidden="true"></span>
+          <span class="wordmark">inari<span>.</span></span>
         </a>
         <nav class="nav-links" aria-label="Navegación principal">
-          <a href="#solucion">La solución</a>
-          <a href="#casos">Casos de uso</a>
-          <a href="#nosotros">Nosotros</a>
+          <a href="#problema">El problema</a>
+          <a href="#solucion">Cómo funciona</a>
+          <a href="#audiencia">Para quién</a>
+          <a href="#precios">Precios</a>
         </nav>
         <a class="button button-small button-outline" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
         <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
@@ -28,16 +31,15 @@
       <main>
         <section class="hero" id="inicio">
           <div class="hero-copy reveal">
-            <p class="eyebrow"><span class="eyebrow-line"></span> Inteligencia documental agéntica</p>
-            <h1>El flujo que convierte el papeleo en <em>progreso.</em></h1>
-            <p class="hero-text">Inari entiende tus expedientes, detecta lo que falta y mueve cada trámite hasta la siguiente decisión. Menos fricción. Más negocio.</p>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Gestión documental autónoma</p>
+            <h1>Burocracia cero.</h1>
+            <p class="hero-text">Inari analiza tus documentos, extrae sus datos y cumplimenta los nuevos por ti. Solo gastas el tiempo que tardas en firmar.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#contacto">Descubre Inari <span aria-hidden="true">↗</span></a>
+              <a class="button button-primary" href="#precios">Prueba gratis 14 días <span aria-hidden="true">↗</span></a>
               <a class="text-link" href="#solucion">Cómo funciona <span aria-hidden="true">↓</span></a>
             </div>
-            <div class="hero-proof"><span class="proof-dot"></span><span>De documento disperso a expediente listo</span></div>
           </div>
-          <div class="hero-art reveal reveal-delay" aria-label="Visualización de un grafo de dependencias documentales en proceso">
+          <div class="hero-art reveal reveal-delay" aria-label="Visualización de documentos analizados, datos extraídos y formularios cumplimentados">
             <div class="art-orbit orbit-one"></div>
             <div class="art-orbit orbit-two"></div>
             <div class="workflow-figure">
@@ -61,7 +63,7 @@
                   <text class="graph-title" x="52" y="39">Contrato.pdf</text>
                   <text class="graph-meta" x="52" y="55">12 páginas</text>
                   <circle class="graph-status-dot" cx="17" cy="67" r="3" />
-                  <text class="graph-status" x="25" y="70">LEÍDO</text>
+                  <text class="graph-status" x="25" y="70">ANALIZADO</text>
                 </g>
 
                 <g class="graph-node graph-form" transform="translate(9 236)">
@@ -71,7 +73,7 @@
                   <rect class="graph-field" x="13" y="48" width="66" height="11" rx="2" />
                   <rect class="graph-checkbox" x="13" y="68" width="8" height="8" rx="1" />
                   <path class="graph-check" d="m15 72 2 2 4-5" />
-                  <text class="graph-status" x="28" y="76">AUTOCOMPLETADO</text>
+                  <text class="graph-status" x="28" y="76">CUMPLIMENTADO</text>
                 </g>
 
                 <g class="graph-node graph-main" transform="translate(163 85)">
@@ -80,22 +82,22 @@
                   <path class="graph-main-head-fix" d="M0 30h132v10H0z" />
                   <text class="graph-main-kicker" x="14" y="17">EXPEDIENTE</text>
                   <text class="graph-main-title" x="14" y="31">04—18</text>
-                  <text class="graph-kicker" x="14" y="60">DEPENDENCIAS</text>
+                  <text class="graph-kicker" x="14" y="60">PROCESO</text>
                   <g class="graph-task">
                     <circle cx="19" cy="78" r="5" /><path d="m16.5 78 2 2 4-5" />
-                    <text x="31" y="81">Identidad</text>
+                    <text x="31" y="81">Analizar</text>
                   </g>
                   <g class="graph-task">
                     <circle cx="19" cy="101" r="5" /><path d="m16.5 101 2 2 4-5" />
-                    <text x="31" y="104">Contrato</text>
+                    <text x="31" y="104">Extraer</text>
                   </g>
                   <g class="graph-task graph-task-active">
                     <circle cx="19" cy="124" r="5" />
-                    <text x="31" y="127">Formulario</text>
+                    <text x="31" y="127">Cumplimentar</text>
                   </g>
                   <g class="graph-task graph-task-pending">
                     <circle cx="19" cy="147" r="5" />
-                    <text x="31" y="150">Validación</text>
+                    <text x="31" y="150">Firmar</text>
                   </g>
                   <rect class="graph-progress-track" x="14" y="166" width="104" height="5" rx="2.5" />
                   <rect class="graph-progress-value" x="14" y="166" width="76" height="5" rx="2.5" />
@@ -109,7 +111,7 @@
                   <text class="graph-data-label" x="12" y="58">FECHA</text><text class="graph-data-value" x="84" y="58" text-anchor="end">18/04</text>
                   <text class="graph-data-label" x="12" y="76">IMPORTE</text><text class="graph-data-value" x="84" y="76" text-anchor="end">12.840</text>
                   <rect class="graph-chip" x="12" y="87" width="72" height="11" rx="5.5" />
-                  <text class="graph-chip-text" x="48" y="95" text-anchor="middle">CONTRASTADO</text>
+                  <text class="graph-chip-text" x="48" y="95" text-anchor="middle">EXTRAÍDO</text>
                 </g>
 
                 <g class="graph-node graph-result" transform="translate(336 244)">
@@ -118,7 +120,7 @@
                   <path class="graph-result-check" d="m15 23 4 4 7-9" />
                   <text class="graph-kicker" x="38" y="20">SALIDA</text>
                   <text class="graph-title" x="38" y="36">Listo</text>
-                  <text class="graph-meta" x="12" y="58">BORRADOR GENERADO</text>
+                  <text class="graph-meta" x="12" y="58">PENDIENTE DE FIRMA</text>
                 </g>
 
                 <g class="graph-working" transform="translate(278 202)">
@@ -129,58 +131,73 @@
                 <path class="graph-cursor" d="m313 225 4 22 5-7 7 8 4-4-7-8 8-4Z" />
               </svg>
             </div>
-
           </div>
         </section>
 
         <section class="problem section-band" id="problema">
-          <div class="section-intro reveal"><p class="eyebrow">El problema</p><h2>El trabajo no debería atascarse en el <em>trabajo administrativo.</em></h2></div>
-          <div class="problem-grid">
-            <p class="lead-copy reveal">Cada expediente cuenta una historia. Pero hoy, esa historia vive repartida entre PDFs, correos, hojas de cálculo y personas que hacen de puente.</p>
-            <div class="stat-block reveal reveal-delay"><strong>68<span>%</span></strong><p>del tiempo de los equipos se pierde buscando, comprobando y trasladando información.</p><small>— El coste invisible de la burocracia</small></div>
-            <div class="problem-note reveal"><span class="note-number">01</span><p>Cuando falta un documento, todo se detiene. Cuando llega uno nuevo, alguien tiene que volver a empezar.</p></div>
+          <div class="reveal"><h2>Tu equipo no se contrató para hacer <em>papeleo.</em></h2></div>
+          <div class="problem-copy reveal reveal-delay">
+            <p class="lead-copy">Los equipos operacionales pierden su talento leyendo, copiando y rellenando documentos. Horas que no aportan valor y que se repiten cada semana.</p>
+            <p class="mission">Nuestra misión es devolverles ese tiempo.</p>
           </div>
         </section>
 
         <section class="solution" id="solucion">
-          <div class="solution-head reveal"><p class="eyebrow">La solución</p><h2>Una inteligencia que <em>desbloquea</em> el siguiente paso.</h2><p>Inari no archiva documentos. Los entiende, los contrasta y actúa sobre ellos para que cada expediente avance con criterio.</p></div>
-          <div class="capabilities">
-            <article class="capability reveal"><span class="cap-number">01</span><div class="cap-icon">⌁</div><h3>Entender</h3><p>Lee documentos heterogéneos y conecta cada dato con su contexto real.</p></article>
-            <article class="capability reveal reveal-delay"><span class="cap-number">02</span><div class="cap-icon">⌑</div><h3>Determinar</h3><p>Deduce los requisitos del trámite y crea una lista viva de lo necesario.</p></article>
-            <article class="capability reveal reveal-delay-2"><span class="cap-number">03</span><div class="cap-icon">↗</div><h3>Resolver</h3><p>Completa formularios, genera borradores y solicita lo que falta.</p></article>
-            <article class="capability reveal reveal-delay-3"><span class="cap-number">04</span><div class="cap-icon">◌</div><h3>Verificar</h3><p>Contrasta cifras, fechas y fuentes antes de poner un documento en circulación.</p></article>
+          <div class="section-heading reveal"><div><h2>Del documento a la firma, <em>sin pasos intermedios.</em></h2></div><p>Inari encadena tres tareas que hoy hace una persona a mano.</p></div>
+          <div class="steps">
+            <article class="step reveal"><div class="step-top"><span class="icon" style="--icon:url(assets/icons/search.svg)"></span><span class="step-number">01</span></div><h3>Analizar</h3><p>Lee cada documento que entra, sea un PDF, un escaneo o un correo, y entiende qué es y para qué sirve.</p></article>
+            <article class="step reveal reveal-delay"><div class="step-top"><span class="icon" style="--icon:url(assets/icons/database.svg)"></span><span class="step-number">02</span></div><h3>Extraer</h3><p>Obtiene los datos relevantes (nombres, fechas, importes, NIF) y los deja estructurados y listos para usar.</p></article>
+            <article class="step reveal reveal-delay-2"><div class="step-top"><span class="icon" style="--icon:url(assets/icons/circle-check.svg)"></span><span class="step-number">03</span></div><h3>Cumplimentar</h3><p>Rellena los nuevos documentos que necesitas con esos datos. Tú solo revisas y firmas.</p></article>
           </div>
-          <div class="quote-strip reveal"><span>La automatización tradicional ejecuta instrucciones.</span><strong>Inari entiende objetivos.</strong></div>
+          <ul class="chips reveal" aria-label="Tecnología">
+            <li>Digitalización</li><li>Extracción de datos</li><li>Interpretación semántica</li><li>Componente agéntico</li>
+          </ul>
         </section>
 
-        <section class="use-cases section-band" id="casos">
-          <div class="section-heading reveal"><div><p class="eyebrow">Dónde empieza el cambio</p><h2>Un flujo más inteligente, <em>en cualquier equipo.</em></h2></div><p>Cuatro puntos de partida para devolver tiempo a las personas que hacen avanzar tu negocio.</p></div>
-          <div class="case-grid">
-            <article class="case-card case-tall reveal"><div class="case-top"><span>01</span><span class="case-arrow">↗</span></div><div><div class="case-icon">⌂</div><h3>Proveedores</h3><p>Homologa terceros y prepara contratos sin perseguir certificados.</p><span class="case-tag">Compras · Procurement</span></div></article>
-            <article class="case-card reveal reveal-delay"><div class="case-top"><span>02</span><span class="case-arrow">↗</span></div><div><div class="case-icon">✦</div><h3>Subvenciones</h3><p>Convierte bases complejas en oportunidades evaluables.</p><span class="case-tag">Fondos públicos</span></div></article>
-            <article class="case-card reveal reveal-delay-2"><div class="case-top"><span>03</span><span class="case-arrow">↗</span></div><div><div class="case-icon">＋</div><h3>Personas</h3><p>De la documentación de alta a un contrato listo para firmar.</p><span class="case-tag">Recursos humanos</span></div></article>
-            <article class="case-card reveal reveal-delay-3"><div class="case-top"><span>04</span><span class="case-arrow">↗</span></div><div><div class="case-icon">▤</div><h3>Gestorías</h3><p>Ordena comprobantes y anticipa los cierres fiscales.</p><span class="case-tag">Asesoría profesional</span></div></article>
-          </div>
+        <section class="audience section-band" id="audiencia">
+          <div class="audience-intro reveal"><h2>Para quien gestiona documentación <em>a diario.</em></h2><p>Si tu equipo pasa el día entre contratos, facturas, pólizas o expedientes, Inari es para ti.</p></div>
+          <ul class="sector-list reveal reveal-delay">
+            <li><span class="icon" style="--icon:url(assets/icons/book-open.svg)"></span>Despachos de abogados</li>
+            <li><span class="icon" style="--icon:url(assets/icons/chart.svg)"></span>Contables y auditorías</li>
+            <li><span class="icon" style="--icon:url(assets/icons/message.svg)"></span>Asesorías y gestorías</li>
+            <li><span class="icon" style="--icon:url(assets/icons/lightbulb.svg)"></span>Consultoras</li>
+            <li><span class="icon" style="--icon:url(assets/icons/users.svg)"></span>PYMES</li>
+            <li><span class="icon" style="--icon:url(assets/icons/home.svg)"></span>Administración de fincas</li>
+            <li><span class="icon" style="--icon:url(assets/icons/shield-check.svg)"></span>Corredurías de seguros</li>
+            <li><span class="icon" style="--icon:url(assets/icons/zap.svg)"></span>Startups tecnológicas</li>
+          </ul>
         </section>
 
-        <section class="about" id="nosotros">
-          <div class="about-mark reveal"><img src="branding/inari-logo-stacked.svg" alt="Inari" /><small>LA LLAVE DEL FLUJO</small></div>
-          <div class="about-copy reveal reveal-delay"><p class="eyebrow">About us</p><h2>Construimos la capa de criterio que faltaba entre los documentos y las <em>decisiones.</em></h2><p>Inari nace de una convicción: la tecnología debe asumir la complejidad para que los equipos puedan dedicarse a lo que requiere de verdad su experiencia.</p><a class="text-link" href="#contacto">Conoce nuestra visión <span aria-hidden="true">↗</span></a></div>
+        <section class="pricing" id="precios">
+          <div class="section-heading reveal"><div><h2>Elige según cuántos documentos <em>gestionas.</em></h2></div><p>Todos los planes incluyen 14 días de prueba gratuita. Precios con pago anual: 2 meses gratis.</p></div>
+          <div class="plans">
+            <article class="plan reveal"><span class="plan-name">Basic</span><strong>49 €<small>/mes</small></strong><p>Hasta 150 documentos al mes</p><a class="button button-outline" href="#contacto">Probar gratis</a></article>
+            <article class="plan reveal reveal-delay"><span class="plan-name">Pro</span><strong>149 €<small>/mes</small></strong><p>Hasta 600 documentos al mes</p><a class="button button-outline" href="#contacto">Probar gratis</a></article>
+            <article class="plan reveal reveal-delay-2"><span class="plan-name">Ultra</span><strong>349 €<small>/mes</small></strong><p>Hasta 2.000 documentos al mes</p><a class="button button-outline" href="#contacto">Probar gratis</a></article>
+            <article class="plan plan-custom reveal reveal-delay-3"><span class="plan-name">Custom</span><strong>750 €<small>/mes</small></strong><p>Más de 2.000 documentos al mes</p><a class="button button-primary" href="#contacto">Hablemos</a></article>
+          </div>
+          <div class="savings reveal">
+            <span class="savings-fox" aria-hidden="true"></span>
+            <div>
+              <p class="eyebrow">Ahorro para el cliente</p>
+              <strong class="savings-number">24.137 €<small>/año</small></strong>
+            </div>
+            <p class="savings-text">ahorrados de media por cliente: la diferencia entre tener 2 administrativos y tener 1 administrativo + Inari.</p>
+          </div>
         </section>
 
         <section class="contact section-band" id="contacto">
-          <div class="contact-copy reveal"><p class="eyebrow">Abramos el flujo</p><h2>¿Qué expediente te está esperando?</h2><p>Cuéntanos dónde se atasca tu operación y te enseñaremos por dónde empezar.</p><a href="mailto:hola@inari.work" class="contact-email">hola@inari.work <span>↗</span></a></div>
+          <div class="contact-copy reveal"><h2>Trámites invisibles. Decisiones <em>instantáneas.</em></h2><p>Construimos la infraestructura donde la información fluye sola entre empresas. Empieza por tu equipo: cuéntanos qué documentos gestionáis y te enseñamos cuánto tiempo puede devolveros Inari.</p></div>
           <form class="contact-form reveal reveal-delay" id="contact-form">
             <label>Tu nombre<input type="text" name="name" placeholder="Nombre y apellidos" required /></label>
             <label>Tu email<input type="email" name="email" placeholder="nombre@empresa.com" required /></label>
             <label>¿En qué podemos ayudarte?<textarea name="message" rows="3" placeholder="Cuéntanos brevemente..." required></textarea></label>
             <button class="button button-primary" type="submit">Enviar mensaje <span aria-hidden="true">↗</span></button>
-            <p class="form-status" role="status" aria-live="polite"></p>
           </form>
         </section>
       </main>
 
-      <footer class="footer"><a class="brand" href="#inicio" aria-label="Inari, inicio"><img class="brand-logo" src="branding/inari-logo-horizontal.svg" alt="" /></a><span>Inteligencia para que el negocio fluya.</span><span>© 2026 Inari</span></footer>
+      <footer class="footer"><a class="brand" href="#inicio" aria-label="Inari, inicio"><span class="fox-mark" aria-hidden="true"></span><span class="wordmark">inari<span>.</span></span></a><span>Burocracia cero, gestión documental autónoma.</span><span class="footer-meta">© 2026 Inari Agents</span></footer>
     </div>
     <script src="script.js"></script>
   </body>
